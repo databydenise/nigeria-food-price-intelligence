@@ -71,25 +71,13 @@ Provides a high-level summary of food inflation trends, exchange rate movements,
 
 ## Page 2 – Item Deep Dive
 
-![Item Deep Dive](figures/dashboard_item_deep_dive.png)
+![Item Deep Dive](images/item-deepdive.jpg)
 
 Allows users to explore individual food commodities, compare price trends over time, and examine their relationship with exchange rate and PMS movements.
 
 ---
 
 # Methodology
-
-## Data Collection
-
-Data was collected from multiple official and publicly available sources:
-
-- **National Bureau of Statistics (NBS)** – Monthly Selected Food Price Watch Reports
-- Historical **USD/NGN Exchange Rate** data
-- Historical **Premium Motor Spirit (PMS)** price data
-
-The food price reports cover all 36 Nigerian states and the Federal Capital Territory.
-
----
 
 ## Data Preparation
 
@@ -141,14 +129,14 @@ Power BI was used to build an interactive dashboard that enables users to:
 
 ---
 
-# Key Insights
+## Key Findings ##
 
-- **Prepacked wheat flour** exhibited the strongest positive correlation with the USD/NGN exchange rate.
-- **White garri** and **yellow garri** were among the commodities most sensitive to exchange rate movements.
-- **Rice**, **beans**, and **a crate of eggs (30 pieces)** also demonstrated notable positive correlations with the exchange rate.
-- PMS prices explained part of the variation observed in transportation-dependent food commodities.
-- However, several commodities expected to have stronger positive relationships with PMS prices exhibited only weak correlations, suggesting that transportation costs alone do not fully explain food price movements.
-- The findings indicate that food inflation is influenced by a combination of exchange rate fluctuations, fuel prices, seasonality, local supply conditions, and regional market dynamics.
+- Prepacked wheat flour exhibited the strongest positive correlation with the USD/NGN exchange rate, followed by white garri, yellow garri, rice, beans, and a crate of eggs (30 pieces).
+- Several staple foods increased in price alongside exchange rate depreciation, suggesting that exchange rate movements may influence food prices through import costs, production inputs, or broader inflationary pressures.
+- Premium Motor Spirit (PMS) prices explained part of the variation in transportation-dependent foods. However, some commodities that were expected to have a strong positive relationship with PMS—particularly those showing weaker or negative relationships with the exchange rate—did not exhibit strong correlations with PMS prices.
+- This suggests that transportation costs alone do not fully explain food price movements and that other domestic factors, such as seasonality, local supply conditions, production costs, and regional market dynamics, likely play important roles.
+- Significant price differences were observed across Nigerian states, highlighting regional disparities in food markets.
+
 
 ---
 
@@ -157,8 +145,8 @@ Power BI was used to build an interactive dashboard that enables users to:
 | Dataset | Source |
 |---------|--------|
 | Monthly Food Prices | National Bureau of Statistics (NBS) |
-| USD/NGN Exchange Rate | Historical exchange rate data |
-| Premium Motor Spirit (PMS) Prices | Historical PMS price data |
+| USD/NGN Exchange Rate | Central Bank of Nigera (CBN) |
+| Premium Motor Spirit (PMS) Prices | National Bureau of Statistics (NBS) |
 
 ---
 
@@ -193,62 +181,15 @@ Food-Inflation-Analytics/
 │
 ├── README.md
 └── requirements.txt
-````
-
----
-
 # Future Improvements
 
-Potential extensions for this project include:
+### Potential extensions for this project include: ###
 
 * Incorporating Consumer Price Index (CPI) data.
 * Expanding the analysis to cover additional years.
 * Developing predictive models for food price forecasting.
 * Introducing automated data pipelines for monthly updates.
 * Publishing the dashboard through the Power BI Service for real-time access.
-
----
-
-# Author
-
-**Denise**
-
-**Data Scientist | Aspiring Data Engineer**
-
-```
-```
-
-
-## Key Findings ##
-
-- Prepacked wheat flour exhibited the strongest positive correlation with the USD/NGN exchange rate, followed by white garri, yellow garri, rice, beans, and a crate of eggs (30 pieces).
-- Several staple foods increased in price alongside exchange rate depreciation, suggesting that exchange rate movements may influence food prices through import costs, production inputs, or broader inflationary pressures.
-- Premium Motor Spirit (PMS) prices explained part of the variation in transportation-dependent foods. However, some commodities that were expected to have a strong positive relationship with PMS—particularly those showing weaker or negative relationships with the exchange rate—did not exhibit strong correlations with PMS prices.
-- This suggests that transportation costs alone do not fully explain food price movements and that other domestic factors, such as seasonality, local supply conditions, production costs, and regional market dynamics, likely play important roles.
-- Significant price differences were observed across Nigerian states, highlighting regional disparities in food markets.
-
-## Technologies ##
-- Python
-- Pandas
-- NumPy
-- Matplotlib
-- Jupyter Notebook
-- Power BI
-
-Repository Structure Coome back
-data/
-notebooks/
-cleaned_data/
-figures/
-README.md
-requirements.txt
-
-## Future Work ##
-1. Extend the dataset with additional years.
-2. Incorporate inflation and CPI data.
-3. Build forecasting models.
-4. Develop an interactive dashboard.
-5. Investigate lag effects between exchange rate movements and food prices.
 
 ## Author ##
 
