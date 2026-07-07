@@ -1,9 +1,9 @@
-# 🇳🇬 Nigerian Food Price Inflation & Exchange Rate Analysis #
+# 🇳🇬 Nigerian Food Price Intelligence: Exchange Rate & Food Inflation Analysis #
 
 ## Project Overview ##
 This project investigates the relationship between food prices in Nigeria and major macroeconomic indicators, particularly the USD/NGN exchange rate and Premium Motor Spirit (PMS) prices.
 The goal was to determine whether fluctuations in foreign exchange rates correspond to increases in food prices across Nigeria and whether transportation costs (represented by PMS prices) have a measurable influence on selected food commodities.
-The analysis uses official monthly food price reports published by the National Bureau of Statistics (NBS), covering all 36 states.
+The analysis uses official monthly food price reports published by the National Bureau of Statistics (NBS) et al., covering all 36 states.
 The final output is an interactive Power BI dashboard designed to help users explore food inflation trends, compare regional prices, and understand how macroeconomic indicators relate to changes in food prices over time.
 
 ## Motivation ##
@@ -22,15 +22,10 @@ Initially, the project was intended to collect live market prices through web sc
 
 ## Dataset ##
 
-### Data Sources ###
-
-- National Bureau of Statistics (NBS) Monthly Selected Food Price Watch
-- Historical USD/NGN Exchange Rates
-- Historical PMS (Petrol) Prices
-
 ### Coverage ###
 
 - Nigeria
+- 13 months; January 2025 - January 2026
 - All 36 states
 - Multiple food commodities
 - Monthly observations
@@ -164,23 +159,20 @@ Power BI was used to build an interactive dashboard that enables users to:
 
 # Repository Structure
 
-```text
-Food-Inflation-Analytics/
-│
-├── data/
-│   ├── raw/
-│   └── processed/
-│
-├── notebooks/
-│
-├── sql/
-│
-├── figures/
+```
+nigeria-food-price-intelligence/
 │
 ├── dashboard/
 │
+├── images/
+│
+├── notebooks/
+│
+├── figures/
+│
 ├── README.md
 └── requirements.txt
+```
 # Future Improvements
 
 ### Potential extensions for this project include: ###
